@@ -16,8 +16,7 @@ Help players improve:
 
 ## Current Features
 - JSON card database  
-- Terminal quiz for elixir costs  
-- Random card selection  
+- Terminal quiz for elixir costs
 
 ## To-Do List
 ### Phase 1 — Terminal
@@ -29,5 +28,3 @@ Help players improve:
 - [ ] Simple web UI with card images  
 - [ ] Placement challenges  
 - [ ] User progress tracking (optional)
-
-## How to Run
