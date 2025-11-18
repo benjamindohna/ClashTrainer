@@ -37,6 +37,24 @@ def load_card_data_sample():
     """
     return __load_json_data("cards_sample.json")
 
+def save_card_data(data_to_save: dict):
+    """
+    Saves the complete card data dictionary to cards.json.
+    Uses robust path management and clean JSON formatting.
+    """
+    filename = "cards.json"
+    # Replicate the robust path finding from __load_json_data
+    DATA_PATH = Path(__file__).resolve().parent / filename
+    
+    try:
+        with open(DATA_PATH, 'w', encoding='utf-8') as f:
+            # Use indent=4 for clean, readable JSON formatting
+            json.dump(data_to_save, f, indent=4)
+        return True
+    except Exception as e:
+        print(f"Error: Failed to save JSON data to {DATA_PATH}: {e}")
+        return False
+
 # count amount of cards in dataset
 def print_amount_of_cards():
     # Count only entries that do NOT start with "_" (those are metadata, NOT cards)

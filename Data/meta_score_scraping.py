@@ -4,12 +4,16 @@ from bs4 import BeautifulSoup
 import time 
 from collections import Counter
 from typing import List, Dict
+import json
+from datetime import datetime
+from .data_utils import load_card_data, save_card_data
 
 # --- Configuration ---
 # 1. Define the list of URLs here. Add or remove URLs as needed.
 URLS = [
     "https://royaleapi.com/decks/popular?time=1d&sort=rating&size=30&players=PvP&min_elixir=1&max_elixir=9&evo=None&min_cycle_elixir=4&max_elixir=28&mode=detail&type=NormalBattle&&&global_exclude=false",
-    "https://royaleapi.com/decks/popular?time=1d&sort=rating&size=30&players=PvP&min_ranked_trophies=0&max_ranked_trophies=4400&min_elixir=1&max_elixir=9&evo=None&min_cycle_elixir=4&max_cycle_elixir=28&mode=detail&type=TopRanked&&&global_exclude=false"
+    "https://royaleapi.com/decks/popular?time=1d&sort=rating&size=30&players=PvP&min_ranked_trophies=0&max_ranked_trophies=4400&min_elixir=1&max_elixir=9&evo=None&min_cycle_elixir=4&max_cycle_elixir=28&mode=detail&type=TopRanked&&&global_exclude=false",
+    "https://royaleapi.com/decks/popular?time=1d&sort=rating&size=30&players=PvP&min_trophies=0&max_trophies=20000&min_elixir=1&max_elixir=9&evo=None&min_cycle_elixir=4&max_cycle_elixir=28&mode=detail&type=Ladder&&&global_exclude=false"
 ]
 
 # --- Selenium Setup ---
@@ -83,6 +87,8 @@ if card_counts:
         score = round((frequency / max_frequency) * 100, 2)
         meta_scores[card_name] = score
 
+
+# PRINT SCORES IF YOU WANT TO
 print("\n--- Card Meta Scores (0-100 Scale) ---")
 # Print the top 15 scoring cards, sorted by score
 sorted_meta_scores = sorted(meta_scores.items(), key=lambda item: item[1], reverse=True)
@@ -93,3 +99,38 @@ for card, score in sorted_meta_scores:
 print("\n(Note: Any card not listed above has an implicit Meta Score of 0 based on this data.)")
 
 
+
+print("\n--- Updating cards.json ---")
+
+# 1. LOAD existing data using the robust function
+card_data = load_card_data() 
+
+if card_data is None:
+    print("🚨 Aborting update: Could not load existing card data.")
+    # Exit the script gracefully if the load fails
+    # You might consider creating the file here if it's missing, but aborting is safer.
+    exit() 
+
+# Get current timestamp
+timestamp = datetime.now().strftime("%d %b %Y, %H:%M:%S")
+cards_updated_count = 0
+
+# 2. UPDATE the data structure (Merging meta_scores)
+for card_name in card_data.keys():
+    if card_name.startswith('_'):
+        continue
+        
+    # Get the score (0 if not found)
+    score = meta_scores.get(card_name, 0)
+    card_data[card_name]['meta_score'] = score
+    cards_updated_count += 1
+    
+# 3. Update the metadata fields
+card_data["_last_updated_meta_scores"] = timestamp
+
+# 4. SAVE the updated dictionary using the robust function
+if save_card_data(card_data):
+    print(f"Success! Updated {cards_updated_count} cards with new meta scores.")
+    print(f"File saved with timestamp: {timestamp}")
+else:
+    print("🚨 Update failed during save process.")
