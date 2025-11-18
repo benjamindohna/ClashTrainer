@@ -1,31 +1,17 @@
-import os
-import json
 import random
 import sys, tty, termios
-
-
+from Data.data_utils import load_card_data
 
 # LOAD DATA
-# Get absolute path to *this* script file
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Navigate to the Data folder (one level up from Backend/)
-DATA_PATH = os.path.join(BASE_DIR, "..", "Data", "cards.json")
-
-# uncomment following line to use sample data: 
-DATA_PATH = os.path.join(BASE_DIR, "..", "Data", "cards_sample.json")
-
-with open(DATA_PATH) as f:
-    card_data = json.load(f)
-
-
+card_data = load_card_data()
+# uncomment following 2 lines to use small sample dataset:
+# from Data.data_utils import load_card_data_sample
+# card_data = load_card_data_sample()
 
 # VARIABLES
 game_is_on = True
 correctly_answered = []
 incorrect_guess_counter = 0
-
-
 
 # FUNCTIONS
 def get_key():
@@ -53,7 +39,6 @@ def get_elixir_input():
         
         # If invalid:
         print("Indicate a number from 1 to 9 for the elixir cost or press 'q' to leave")
-
 
 
 # LETS GO
