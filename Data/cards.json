@@ -1,0 +1,371 @@
+{
+    "_last_updated_selection": "17th Nov 25",
+    "_last_updated_meta_scores": "/",
+    "_note": "event and temporary cards excluded",
+
+    "Knight": {
+        "elixir": 3
+    },
+    "Archers": {
+        "elixir": 3
+    },
+    "Goblins": {
+        "elixir": 2
+    },
+    "Giant": {
+        "elixir": 5
+    },
+    "P.E.K.K.A": {
+        "elixir": 7
+    },
+    "Minions": {
+        "elixir": 3
+    },
+    "Balloon": {
+        "elixir": 5
+    },
+    "Witch": {
+        "elixir": 5
+    },
+    "Barbarians": {
+        "elixir": 5
+    },
+    "Golem": {
+        "elixir": 8
+    },
+    "Skeletons": {
+        "elixir": 1
+    },
+    "Valkyrie": {
+        "elixir": 4
+    },
+    "Skeleton Army": {
+        "elixir": 3
+    },
+    "Bomber": {
+        "elixir": 2
+    },
+    "Musketeer": {
+        "elixir": 4
+    },
+    "Baby Dragon": {
+        "elixir": 4
+    },
+    "Prince": {
+        "elixir": 5
+    },
+    "Wizard": {
+        "elixir": 5
+    },
+    "Mini P.E.K.K.A": {
+        "elixir": 4
+    },
+    "Spear Goblins": {
+        "elixir": 2
+    },
+    "Giant Skeleton": {
+        "elixir": 6
+    },
+    "Hog Rider": {
+        "elixir": 4
+    },
+    "Minion Horde": {
+        "elixir": 5
+    },
+    "Ice Wizard": {
+        "elixir": 3
+    },
+    "Royal Giant": {
+        "elixir": 6
+    },
+    "Guards": {
+        "elixir": 3
+    },
+    "Princess": {
+        "elixir": 3
+    },
+    "Dark Prince": {
+        "elixir": 4
+    },
+    "Three Musketeers": {
+        "elixir": 9
+    },
+    "Lava Hound": {
+        "elixir": 7
+    },
+    "Ice Spirit": {
+        "elixir": 1
+    },
+    "Fire Spirit": {
+        "elixir": 1
+    },
+    "Miner": {
+        "elixir": 3
+    },
+    "Sparky": {
+        "elixir": 6
+    },
+    "Bowler": {
+        "elixir": 5
+    },
+    "Lumberjack": {
+        "elixir": 4
+    },
+    "Battle Ram": {
+        "elixir": 4
+    },
+    "Inferno Dragon": {
+        "elixir": 4
+    },
+    "Ice Golem": {
+        "elixir": 2
+    },
+    "Mega Minion": {
+        "elixir": 3
+    },
+    "Dart Goblin": {
+        "elixir": 3
+    },
+    "Goblin Gang": {
+        "elixir": 3
+    },
+    "Electro Wizard": {
+        "elixir": 4
+    },
+    "Elite Barbarians": {
+        "elixir": 6
+    },
+    "Hunter": {
+        "elixir": 4
+    },
+    "Executioner": {
+        "elixir": 5
+    },
+    "Bandit": {
+        "elixir": 3
+    },
+    "Royal Recruits": {
+        "elixir": 7
+    },
+    "Night Witch": {
+        "elixir": 4
+    },
+    "Bats": {
+        "elixir": 2
+    },
+    "Royal Ghost": {
+        "elixir": 3
+    },
+    "Ram Rider": {
+        "elixir": 5
+    },
+    "Zappies": {
+        "elixir": 4
+    },
+    "Rascals": {
+        "elixir": 5
+    },
+    "Cannon Cart": {
+        "elixir": 5
+    },
+    "Mega Knight": {
+        "elixir": 7
+    },
+    "Skeleton Barrel": {
+        "elixir": 3
+    },
+    "Flying Machine": {
+        "elixir": 4
+    },
+    "Wall Breakers": {
+        "elixir": 2
+    },
+    "Royal Hogs": {
+        "elixir": 5
+    },
+    "Goblin Giant": {
+        "elixir": 6
+    },
+    "Fisherman": {
+        "elixir": 3
+    },
+    "Magic Archer": {
+        "elixir": 4
+    },
+    "Electro Dragon": {
+        "elixir": 5
+    },
+    "Firecracker": {
+        "elixir": 3
+    },
+    "Mighty Miner": {
+        "elixir": 4
+    },
+    "Elixir Golem": {
+        "comment": "think about this. is either 3 or 7 elixir...",
+        "elixir": 3
+    },
+    "Battle Healer": {
+        "elixir": 4
+    },
+    "Skeleton King": {
+        "elixir": 4
+    },
+    "Archer Queen": {
+        "elixir": 5
+    },
+    "Golden Knight": {
+        "elixir": 4
+    },
+    "Monk": {
+        "elixir": 5
+    },
+    "Skeleton Dragons": {
+        "elixir": 4
+    },
+    "Mother Witch": {
+        "elixir": 4
+    },
+    "Electro Spirit": {
+        "elixir": 1
+    },
+    "Electro Giant": {
+        "elixir": 7
+    },
+    "Phoenix": {
+        "elixir": 4
+    },
+    "Cannon": {
+        "elixir": 3
+    },
+    "Goblin Hut": {
+        "elixir": 4
+    },
+    "Mortar": {
+        "elixir": 4
+    },
+    "Inferno Tower": {
+        "elixir": 5
+    },
+    "Bomb Tower": {
+        "elixir": 4
+    },
+    "Barbarian Hut": {
+        "elixir": 6
+    },
+    "Tesla": {
+        "elixir": 4
+    },
+    "Elixir Collector": {
+        "elixir": 6
+    },
+    "X-Bow": {
+        "elixir": 6
+    },
+    "Tombstone": {
+        "elixir": 3
+    },
+    "Furnace": {
+        "elixir": 4
+    },
+    "Goblin Cage": {
+        "elixir": 4
+    },
+    "Goblin Drill": {
+        "elixir": 4
+    },
+    "Fireball": {
+        "elixir": 4
+    },
+    "Arrows": {
+        "elixir": 3
+    },
+    "Rage": {
+        "elixir": 2
+    },
+    "Rocket": {
+        "elixir": 6
+    },
+    "Goblin Barrel": {
+        "elixir": 3
+    },
+    "Freeze": {
+        "elixir": 4
+    },
+    "Mirror": {
+        "comment": "think about this. needs special treatement in code",
+        "elixir": 1
+    },
+    "Lightning": {
+        "elixir": 6
+    },
+    "Zap": {
+        "elixir": 2
+    },
+    "Poison": {
+        "elixir": 4
+    },
+    "Graveyard": {
+        "elixir": 5
+    },
+    "The Log": {
+        "elixir": 2
+    },
+    "Tornado": {
+        "elixir": 3
+    },
+    "Clone": {
+        "elixir": 3
+    },
+    "Earthquake": {
+        "elixir": 3
+    },
+    "Barbarian Barrel": {
+        "elixir": 2
+    },
+    "Heal Spirit": {
+        "elixir": 1
+    },
+    "Giant Snowball": {
+        "elixir": 2
+    },
+    "Royal Delivery": {
+        "elixir": 3
+    },
+    "Berserker": {
+        "elixir": 2
+    },
+    "Suspicious Bush": {
+        "elixir": 2
+    },
+    "Goblin Demolisher": {
+        "elixir": 4
+    },
+    "Goblin Curse": {
+        "elixir": 2
+    },
+    "Void": {
+        "elixir": 3
+    },
+    "Rune Giant": {
+        "elixir": 4
+    },
+    "Goblin Machine": {
+        "elixir": 5
+    },
+    "Spirit Empress": {
+        "elixir": 6
+    },
+    "Little Prince": {
+        "elixir": 3
+    },
+    "Goblinstein": {
+        "elixir": 5
+    },
+    "Boss Bandit": {
+        "elixir": 6
+    },
+    "Vines": {
+        "elixir": 3
+    }
+}

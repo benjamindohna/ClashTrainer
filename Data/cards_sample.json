@@ -1,0 +1,27 @@
+{
+    "_last_updated_selection": "17th Nov 25",
+    "_last_updated_meta_scores": "/",
+    "_note": "event and temporary cards excluded",
+
+    "Knight": {
+        "elixir": 3
+    },
+    "Archers": {
+        "elixir": 3
+    },
+    "Goblins": {
+        "elixir": 2
+    },
+    "Giant": {
+        "elixir": 5
+    },
+    "P.E.K.K.A": {
+        "elixir": 7
+    },
+    "Minions": {
+        "elixir": 3
+    },
+    "Balloon": {
+        "elixir": 5
+    }
+}
