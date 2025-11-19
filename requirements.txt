@@ -1,0 +1,5 @@
+# List of dependencies required to run the ClashTrainer project
+
+# Core Scraping and Parsing Libraries
+selenium
+beautifulsoup4

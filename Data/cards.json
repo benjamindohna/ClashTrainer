@@ -1,6 +1,6 @@
 {
     "_last_updated_selection": "17th Nov 25",
-    "_last_updated_meta_scores": "19 Nov 2025, 17:09:26",
+    "_last_updated_meta_scores": "19 Nov 2025, 17:45:04",
     "_note": "event and temporary cards excluded",
     "Knight": {
         "elixir": 3,
@@ -48,11 +48,11 @@
     },
     "Valkyrie": {
         "elixir": 4,
-        "meta_score": 28.0
+        "meta_score": 32.0
     },
     "Skeleton Army": {
         "elixir": 3,
-        "meta_score": 4.0
+        "meta_score": 8.0
     },
     "Bomber": {
         "elixir": 2,
@@ -68,7 +68,7 @@
     },
     "Prince": {
         "elixir": 5,
-        "meta_score": 8.0
+        "meta_score": 4.0
     },
     "Wizard": {
         "elixir": 5,
@@ -120,7 +120,7 @@
     },
     "Lava Hound": {
         "elixir": 7,
-        "meta_score": 4.0
+        "meta_score": 8.0
     },
     "Ice Spirit": {
         "elixir": 1,
@@ -168,7 +168,7 @@
     },
     "Goblin Gang": {
         "elixir": 3,
-        "meta_score": 28.0
+        "meta_score": 24.0
     },
     "Electro Wizard": {
         "elixir": 4,
@@ -188,7 +188,7 @@
     },
     "Bandit": {
         "elixir": 3,
-        "meta_score": 24.0
+        "meta_score": 20.0
     },
     "Royal Recruits": {
         "elixir": 7,
@@ -224,7 +224,7 @@
     },
     "Mega Knight": {
         "elixir": 7,
-        "meta_score": 4.0
+        "meta_score": 0
     },
     "Skeleton Barrel": {
         "elixir": 3,
@@ -236,7 +236,7 @@
     },
     "Wall Breakers": {
         "elixir": 2,
-        "meta_score": 12.0
+        "meta_score": 8.0
     },
     "Royal Hogs": {
         "elixir": 5,
@@ -281,7 +281,7 @@
     },
     "Archer Queen": {
         "elixir": 5,
-        "meta_score": 12.0
+        "meta_score": 8.0
     },
     "Golden Knight": {
         "elixir": 4,
@@ -293,7 +293,7 @@
     },
     "Skeleton Dragons": {
         "elixir": 4,
-        "meta_score": 4.0
+        "meta_score": 8.0
     },
     "Mother Witch": {
         "elixir": 4,
@@ -349,7 +349,7 @@
     },
     "Tombstone": {
         "elixir": 3,
-        "meta_score": 8.0
+        "meta_score": 12.0
     },
     "Furnace": {
         "elixir": 4,
@@ -365,11 +365,11 @@
     },
     "Fireball": {
         "elixir": 4,
-        "meta_score": 76.0
+        "meta_score": 80.0
     },
     "Arrows": {
         "elixir": 3,
-        "meta_score": 28.0
+        "meta_score": 24.0
     },
     "Rage": {
         "elixir": 2,
@@ -398,7 +398,7 @@
     },
     "Zap": {
         "elixir": 2,
-        "meta_score": 28.0
+        "meta_score": 24.0
     },
     "Poison": {
         "elixir": 4,
@@ -470,7 +470,7 @@
     },
     "Spirit Empress": {
         "elixir": 6,
-        "meta_score": 0
+        "meta_score": 4.0
     },
     "Little Prince": {
         "elixir": 3,
@@ -486,6 +486,6 @@
     },
     "Vines": {
         "elixir": 3,
-        "meta_score": 20.0
+        "meta_score": 24.0
     }
 }
