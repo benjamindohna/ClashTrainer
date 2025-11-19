@@ -1,38 +1,38 @@
 {
     "_last_updated_selection": "17th Nov 25",
-    "_last_updated_meta_scores": "18 Nov 2025, 20:43:25",
+    "_last_updated_meta_scores": "19 Nov 2025, 13:12:11",
     "_note": "event and temporary cards excluded",
     "Knight": {
         "elixir": 3,
-        "meta_score": 27.5
+        "meta_score": 30.95
     },
     "Archers": {
         "elixir": 3,
-        "meta_score": 12.5
+        "meta_score": 11.9
     },
     "Goblins": {
         "elixir": 2,
-        "meta_score": 5.0
+        "meta_score": 4.76
     },
     "Giant": {
         "elixir": 5,
-        "meta_score": 10.0
+        "meta_score": 7.14
     },
     "P.E.K.K.A": {
         "elixir": 7,
-        "meta_score": 15.0
+        "meta_score": 11.9
     },
     "Minions": {
         "elixir": 3,
-        "meta_score": 20.0
+        "meta_score": 14.29
     },
     "Balloon": {
         "elixir": 5,
-        "meta_score": 15.0
+        "meta_score": 14.29
     },
     "Witch": {
         "elixir": 5,
-        "meta_score": 12.5
+        "meta_score": 11.9
     },
     "Barbarians": {
         "elixir": 5,
@@ -40,7 +40,7 @@
     },
     "Golem": {
         "elixir": 8,
-        "meta_score": 22.5
+        "meta_score": 16.67
     },
     "Skeletons": {
         "elixir": 1,
@@ -48,27 +48,27 @@
     },
     "Valkyrie": {
         "elixir": 4,
-        "meta_score": 25.0
+        "meta_score": 26.19
     },
     "Skeleton Army": {
         "elixir": 3,
-        "meta_score": 0
+        "meta_score": 2.38
     },
     "Bomber": {
         "elixir": 2,
-        "meta_score": 20.0
+        "meta_score": 14.29
     },
     "Musketeer": {
         "elixir": 4,
-        "meta_score": 30.0
+        "meta_score": 33.33
     },
     "Baby Dragon": {
         "elixir": 4,
-        "meta_score": 25.0
+        "meta_score": 26.19
     },
     "Prince": {
         "elixir": 5,
-        "meta_score": 2.5
+        "meta_score": 2.38
     },
     "Wizard": {
         "elixir": 5,
@@ -76,7 +76,7 @@
     },
     "Mini P.E.K.K.A": {
         "elixir": 4,
-        "meta_score": 20.0
+        "meta_score": 14.29
     },
     "Spear Goblins": {
         "elixir": 2,
@@ -84,11 +84,11 @@
     },
     "Giant Skeleton": {
         "elixir": 6,
-        "meta_score": 0
+        "meta_score": 2.38
     },
     "Hog Rider": {
         "elixir": 4,
-        "meta_score": 45.0
+        "meta_score": 50.0
     },
     "Minion Horde": {
         "elixir": 5,
@@ -96,43 +96,43 @@
     },
     "Ice Wizard": {
         "elixir": 3,
-        "meta_score": 10.0
+        "meta_score": 11.9
     },
     "Royal Giant": {
         "elixir": 6,
-        "meta_score": 15.0
+        "meta_score": 11.9
     },
     "Guards": {
         "elixir": 3,
-        "meta_score": 10.0
+        "meta_score": 7.14
     },
     "Princess": {
         "elixir": 3,
-        "meta_score": 15.0
+        "meta_score": 16.67
     },
     "Dark Prince": {
         "elixir": 4,
-        "meta_score": 7.5
+        "meta_score": 4.76
     },
     "Three Musketeers": {
         "elixir": 9,
-        "meta_score": 12.5
+        "meta_score": 14.29
     },
     "Lava Hound": {
         "elixir": 7,
-        "meta_score": 5.0
+        "meta_score": 4.76
     },
     "Ice Spirit": {
         "elixir": 1,
-        "meta_score": 72.5
+        "meta_score": 73.81
     },
     "Fire Spirit": {
         "elixir": 1,
-        "meta_score": 10.0
+        "meta_score": 7.14
     },
     "Miner": {
         "elixir": 3,
-        "meta_score": 15.0
+        "meta_score": 11.9
     },
     "Sparky": {
         "elixir": 6,
@@ -140,63 +140,63 @@
     },
     "Bowler": {
         "elixir": 5,
-        "meta_score": 10.0
+        "meta_score": 11.9
     },
     "Lumberjack": {
         "elixir": 4,
-        "meta_score": 10.0
+        "meta_score": 7.14
     },
     "Battle Ram": {
         "elixir": 4,
-        "meta_score": 12.5
+        "meta_score": 9.52
     },
     "Inferno Dragon": {
         "elixir": 4,
-        "meta_score": 5.0
+        "meta_score": 2.38
     },
     "Ice Golem": {
         "elixir": 2,
-        "meta_score": 37.5
+        "meta_score": 40.48
     },
     "Mega Minion": {
         "elixir": 3,
-        "meta_score": 10.0
+        "meta_score": 9.52
     },
     "Dart Goblin": {
         "elixir": 3,
-        "meta_score": 10.0
+        "meta_score": 9.52
     },
     "Goblin Gang": {
         "elixir": 3,
-        "meta_score": 20.0
+        "meta_score": 23.81
     },
     "Electro Wizard": {
         "elixir": 4,
-        "meta_score": 12.5
+        "meta_score": 9.52
     },
     "Elite Barbarians": {
         "elixir": 6,
-        "meta_score": 7.5
+        "meta_score": 4.76
     },
     "Hunter": {
         "elixir": 4,
-        "meta_score": 22.5
+        "meta_score": 21.43
     },
     "Executioner": {
         "elixir": 5,
-        "meta_score": 12.5
+        "meta_score": 11.9
     },
     "Bandit": {
         "elixir": 3,
-        "meta_score": 15.0
+        "meta_score": 14.29
     },
     "Royal Recruits": {
         "elixir": 7,
-        "meta_score": 10.0
+        "meta_score": 9.52
     },
     "Night Witch": {
         "elixir": 4,
-        "meta_score": 2.5
+        "meta_score": 2.38
     },
     "Bats": {
         "elixir": 2,
@@ -204,23 +204,23 @@
     },
     "Royal Ghost": {
         "elixir": 3,
-        "meta_score": 62.5
+        "meta_score": 54.76
     },
     "Ram Rider": {
         "elixir": 5,
-        "meta_score": 7.5
+        "meta_score": 7.14
     },
     "Zappies": {
         "elixir": 4,
-        "meta_score": 15.0
+        "meta_score": 14.29
     },
     "Rascals": {
         "elixir": 5,
-        "meta_score": 10.0
+        "meta_score": 9.52
     },
     "Cannon Cart": {
         "elixir": 5,
-        "meta_score": 5.0
+        "meta_score": 7.14
     },
     "Mega Knight": {
         "elixir": 7,
@@ -228,19 +228,19 @@
     },
     "Skeleton Barrel": {
         "elixir": 3,
-        "meta_score": 5.0
+        "meta_score": 9.52
     },
     "Flying Machine": {
         "elixir": 4,
-        "meta_score": 10.0
+        "meta_score": 11.9
     },
     "Wall Breakers": {
         "elixir": 2,
-        "meta_score": 10.0
+        "meta_score": 7.14
     },
     "Royal Hogs": {
         "elixir": 5,
-        "meta_score": 30.0
+        "meta_score": 30.95
     },
     "Goblin Giant": {
         "elixir": 6,
@@ -248,64 +248,64 @@
     },
     "Fisherman": {
         "elixir": 3,
-        "meta_score": 15.0
+        "meta_score": 11.9
     },
     "Magic Archer": {
         "elixir": 4,
-        "meta_score": 10.0
+        "meta_score": 9.52
     },
     "Electro Dragon": {
         "elixir": 5,
-        "meta_score": 12.5
+        "meta_score": 9.52
     },
     "Firecracker": {
         "elixir": 3,
-        "meta_score": 17.5
+        "meta_score": 23.81
     },
     "Mighty Miner": {
         "elixir": 4,
-        "meta_score": 15.0
+        "meta_score": 14.29
     },
     "Elixir Golem": {
         "comment": "think about this. is either 3 or 7 elixir...",
         "elixir": 3,
-        "meta_score": 0
+        "meta_score": 2.38
     },
     "Battle Healer": {
         "elixir": 4,
-        "meta_score": 10.0
+        "meta_score": 7.14
     },
     "Skeleton King": {
         "elixir": 4,
-        "meta_score": 0
+        "meta_score": 2.38
     },
     "Archer Queen": {
         "elixir": 5,
-        "meta_score": 7.5
+        "meta_score": 7.14
     },
     "Golden Knight": {
         "elixir": 4,
-        "meta_score": 7.5
+        "meta_score": 2.38
     },
     "Monk": {
         "elixir": 5,
-        "meta_score": 2.5
+        "meta_score": 0
     },
     "Skeleton Dragons": {
         "elixir": 4,
-        "meta_score": 5.0
+        "meta_score": 2.38
     },
     "Mother Witch": {
         "elixir": 4,
-        "meta_score": 2.5
+        "meta_score": 2.38
     },
     "Electro Spirit": {
         "elixir": 1,
-        "meta_score": 37.5
+        "meta_score": 33.33
     },
     "Electro Giant": {
         "elixir": 7,
-        "meta_score": 7.5
+        "meta_score": 9.52
     },
     "Phoenix": {
         "elixir": 4,
@@ -313,23 +313,23 @@
     },
     "Cannon": {
         "elixir": 3,
-        "meta_score": 52.5
+        "meta_score": 54.76
     },
     "Goblin Hut": {
         "elixir": 4,
-        "meta_score": 12.5
+        "meta_score": 9.52
     },
     "Mortar": {
         "elixir": 4,
-        "meta_score": 5.0
+        "meta_score": 7.14
     },
     "Inferno Tower": {
         "elixir": 5,
-        "meta_score": 15.0
+        "meta_score": 16.67
     },
     "Bomb Tower": {
         "elixir": 4,
-        "meta_score": 12.5
+        "meta_score": 11.9
     },
     "Barbarian Hut": {
         "elixir": 6,
@@ -337,19 +337,19 @@
     },
     "Tesla": {
         "elixir": 4,
-        "meta_score": 20.0
+        "meta_score": 19.05
     },
     "Elixir Collector": {
         "elixir": 6,
-        "meta_score": 20.0
+        "meta_score": 11.9
     },
     "X-Bow": {
         "elixir": 6,
-        "meta_score": 12.5
+        "meta_score": 11.9
     },
     "Tombstone": {
         "elixir": 3,
-        "meta_score": 7.5
+        "meta_score": 7.14
     },
     "Furnace": {
         "elixir": 4,
@@ -357,92 +357,92 @@
     },
     "Goblin Cage": {
         "elixir": 4,
-        "meta_score": 12.5
+        "meta_score": 11.9
     },
     "Goblin Drill": {
         "elixir": 4,
-        "meta_score": 7.5
+        "meta_score": 4.76
     },
     "Fireball": {
         "elixir": 4,
-        "meta_score": 77.5
+        "meta_score": 78.57
     },
     "Arrows": {
         "elixir": 3,
-        "meta_score": 27.5
+        "meta_score": 23.81
     },
     "Rage": {
         "elixir": 2,
-        "meta_score": 2.5
+        "meta_score": 2.38
     },
     "Rocket": {
         "elixir": 6,
-        "meta_score": 27.5
+        "meta_score": 26.19
     },
     "Goblin Barrel": {
         "elixir": 3,
-        "meta_score": 20.0
+        "meta_score": 19.05
     },
     "Freeze": {
         "elixir": 4,
-        "meta_score": 2.5
+        "meta_score": 2.38
     },
     "Mirror": {
         "comment": "think about this. needs special treatement in code",
         "elixir": 1,
-        "meta_score": 0
+        "meta_score": 2.38
     },
     "Lightning": {
         "elixir": 6,
-        "meta_score": 20.0
+        "meta_score": 21.43
     },
     "Zap": {
         "elixir": 2,
-        "meta_score": 20.0
+        "meta_score": 16.67
     },
     "Poison": {
         "elixir": 4,
-        "meta_score": 5.0
+        "meta_score": 4.76
     },
     "Graveyard": {
         "elixir": 5,
-        "meta_score": 10.0
+        "meta_score": 7.14
     },
     "The Log": {
         "elixir": 2,
-        "meta_score": 80.0
+        "meta_score": 83.33
     },
     "Tornado": {
         "elixir": 3,
-        "meta_score": 27.5
+        "meta_score": 26.19
     },
     "Clone": {
         "elixir": 3,
-        "meta_score": 0
+        "meta_score": 2.38
     },
     "Earthquake": {
         "elixir": 3,
-        "meta_score": 25.0
+        "meta_score": 26.19
     },
     "Barbarian Barrel": {
         "elixir": 2,
-        "meta_score": 92.5
+        "meta_score": 85.71
     },
     "Heal Spirit": {
         "elixir": 1,
-        "meta_score": 10.0
+        "meta_score": 9.52
     },
     "Giant Snowball": {
         "elixir": 2,
-        "meta_score": 30.0
+        "meta_score": 23.81
     },
     "Royal Delivery": {
         "elixir": 3,
-        "meta_score": 10.0
+        "meta_score": 7.14
     },
     "Berserker": {
         "elixir": 2,
-        "meta_score": 17.5
+        "meta_score": 11.9
     },
     "Suspicious Bush": {
         "elixir": 2,
@@ -478,14 +478,14 @@
     },
     "Goblinstein": {
         "elixir": 5,
-        "meta_score": 2.5
+        "meta_score": 0
     },
     "Boss Bandit": {
         "elixir": 6,
-        "meta_score": 7.5
+        "meta_score": 7.14
     },
     "Vines": {
         "elixir": 3,
-        "meta_score": 25.0
+        "meta_score": 21.43
     }
 }

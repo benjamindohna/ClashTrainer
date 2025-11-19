@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 import time 
 from collections import Counter
 from typing import List, Dict
-import json
 from datetime import datetime
 from .data_utils import load_card_data, save_card_data
 
