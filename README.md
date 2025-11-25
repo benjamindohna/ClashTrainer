@@ -1,4 +1,4 @@
-# Clash Royale Trainer 👑
+# ClashTrainer
 
 ## Authors
 - Benjamin Dohna
