@@ -5,13 +5,13 @@ A simple training tool designed to help players of **Clash Royale** to improve i
 
 ## Purpose and Scope
 Most of the tools build for Clash Royale players so far mainly revolve around deck building and superficial matchup analysis. I believe far more sophisticated and useful tools can be built to help players improve their skills. 
-The dream or end goal of this project is to sucessfully incorporate one or multiple models that can create common and relevant game situations, and not only find but also explain the best move(s) for each of these situations, because these tools would build the foundation for what I believe to be the best way for players to improve in Clash Royale: pattern recognition and awareness of best plays. 
+The dream or end goal of this project is to sucessfully incorporate one or multiple models that can create common and relevant game situations, and subsequently not only find, but also explain the best move(s) for each of these situations to the users of the platform. I believe this would built the foundation for the best way to improve in the game: pattern recognition of the best moves. 
 
 ---
 
 ## Project Outline & Features
 
-The project is planned across several developmental phases:
+Currently, the project is planned across these developmental phases:
 
 ### 1. Initial Prototype (Terminal Quiz)
 * **Goal:** Simple quiz for Clash Royale cards running entirely in the terminal.
