@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clash Trainer</title>
+</head>
+<body>
+
+    <h1>Clash Trainer – AJAX Edition</h1>
+
+    <div id="game-box">
+        <p id="card-name">Loading...</p>
+
+        <input type="number" id="guess" min="1" max="9">
+        <button id="submit-btn">Submit Guess</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        async function fetchNextCard() {
+            const res = await fetch("/api/next_card");
+            const data = await res.json();
+
+            if (data.finished) {
+                document.getElementById("card-name").innerText = "All cards completed!";
+                document.getElementById("submit-btn").disabled = true;
+                return;
+            }
+
+            document.getElementById("card-name").innerText = data.card;
+        }
+
+        async function submitGuess() {
+            const guess = document.getElementById("guess").value;
+
+            const res = await fetch("/api/submit_guess", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({ guess: guess })
+            });
+
+            const data = await res.json();
+
+            if (data.correct) {
+                document.getElementById("message").innerText = "Correct!";
+            } else {
+                document.getElementById("message").innerText =
+                    "Wrong! Correct was " + data.correct_elixir;
+            }
+
+            if (data.finished) {
+                document.getElementById("card-name").innerText =
+                    "All cards completed!";
+                document.getElementById("submit-btn").disabled = true;
+            } else {
+                fetchNextCard();
+            }
+        }
+
+        document.getElementById("submit-btn").onclick = submitGuess;
+
+        // Load first card:
+        fetchNextCard();
+    </script>
+
+</body>
+</html>
