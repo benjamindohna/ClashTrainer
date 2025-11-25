@@ -1,20 +1,17 @@
 # ClashTrainer
 
 ## Description
-A simple training tool designed to help players of **Clash Royale** improve their strategic decision-making and mechanical skills. The project begins with a terminal-based elixir quiz and will grow into a full-featured web platform with interactive exercises.
+A simple training tool designed to help players of **Clash Royale** to improve in the game. Currently, the main features revolve around elixir awareness and basic but relevant calculations abilities. 
 
-## Purpose
-The platform's goal is to provide a structured way for players to improve:
-* **Elixir Awareness:** Instinctive knowledge of card costs and managing the elixir bar.
-* **Card Recognition:** Quick identification of cards and their strategic roles.
-* **Elixir Trade Evaluation:** Accurately calculating the value of card exchanges.
-* **Placement Accuracy:** Mastering optimal card placement on the arena map (future phase).
+## Purpose and Scope
+Most of the tools build for Clash Royale players so far mainly revolve around deck building and superficial matchup analysis. I believe far more sophisticated and useful tools can be built to help players improve their skills. 
+The dream or end goal of this project is to sucessfully incorporate one or multiple models that can create common and relevant game situations, and not only find but also explain the best move(s) for each of these situations, because these tools would build the foundation for what I believe to be the best way for players to improve in Clash Royale: pattern recognition and awareness of best plays. 
 
 ---
 
 ## Project Outline & Features
 
-This project is planned across several developmental phases:
+The project is planned across several developmental phases:
 
 ### 1. Initial Prototype (Terminal Quiz)
 * **Goal:** Simple quiz for Clash Royale cards running entirely in the terminal.
