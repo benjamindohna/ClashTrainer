@@ -1,8 +1,5 @@
 # ClashTrainer
 
-## Authors
-- Benjamin Dohna
-
 ## Description
 A simple training tool designed to help players of **Clash Royale** improve their strategic decision-making and mechanical skills. The project begins with a terminal-based elixir quiz and will grow into a full-featured web platform with interactive exercises.
 
