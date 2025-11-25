@@ -92,9 +92,6 @@ for card, score in sorted_meta_scores[:16]:
     # removed the star emoji
     print(f"{card:<20}: {score}")
 
-print("\n(note: any card not listed above has an implicit meta score of 0 based on this data.)")
-
-
 print("\nupdating cards.json")
 
 # load existing data using the robust function
