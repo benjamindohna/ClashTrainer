@@ -1,5 +1,4 @@
-# List of dependencies required to run the ClashTrainer project
-
-# Core Scraping and Parsing Libraries
+Flask
+Flask-CORS
 selenium
 beautifulsoup4
