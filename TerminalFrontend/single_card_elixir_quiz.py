@@ -1,6 +1,7 @@
 import random
 import sys, tty, termios
 from Data.data_utils import load_card_data
+import re
 
 # LOAD DATA
 card_data = load_card_data()
@@ -28,7 +29,8 @@ def get_elixir_input():
         key = get_key()
 
         # Check if key is a digit 1–9
-        if key.isdigit():
+        pattern = r'^[1-9]$'
+        if re.fullmatch(pattern, key):
             value = int(key)
             if 1 <= value <= 9:
                 print(value)
