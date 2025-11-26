@@ -1,4 +1,5 @@
 import random
+import re
 import sys, tty, termios
 from Data.data_utils import load_card_data
 from Backend.trade_calculations import get_trade_balance, get_trade_balance_sign, explain_trade_balance
@@ -28,7 +29,6 @@ def get_key_n(n):
             if ch == 'q':
                 return 'q'
             buffer += ch
-            print(ch, end="", flush=True)
 
         return buffer
     finally:
@@ -41,21 +41,23 @@ def get_elixir_input(digit_length):
 
         if key == 'q':
             return 'q'
-        if key.isdigit():
-            return int(key)
+        
+        pattern = r'^\d+$'
+        if re.fullmatch(pattern, key):
+                return int(key)
         
         print("Indicate digits or press 'q' to leave")
 
 
 # LETS GO
 while game_is_on:
-
+    print()
     cards = [key for key in card_data.keys() if not key.startswith("_")]
     # print("cards:", cards)
     # print("correctly:", correctly_answered)
     # print(card_data.keys())
 
-    attacking_cards = random.sample(cards, 2)
+    attacking_cards = random.sample(cards, 1)
     defending_cards = random.sample(cards, 1)
 
     print(f"Opponent: {', '.join(attacking_cards)}")
@@ -71,11 +73,15 @@ while game_is_on:
         print("Goodbye!")
         break
 
+    print()
+    print("----------------------")
+
     if guess == abs(correct_answer): 
-        print("correct!\n")
+        print(f"{guess} is correct!\n")
     else: 
-        print(f"wrong! It was a {correct_answer} trade\n")
+        print(f"{guess} is wrong! It was a {correct_answer} elixir trade\n")
         incorrect_guess_counter += 1
+    
     
     explain_trade_balance(defending_cards, attacking_cards)
         
