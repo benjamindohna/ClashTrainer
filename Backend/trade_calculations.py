@@ -58,7 +58,6 @@ def explain_trade_balance(cards_player: list, cards_opponent: list):
     # Trade balance explanation
     trade_balance = elixir_spent_opponent - elixir_spent_player
     print(f"{elixir_spent_opponent} - {elixir_spent_player} = {trade_balance}")
-    print(f"-> the absolute value is {abs(trade_balance)}\n")
     
     return trade_balance
     
