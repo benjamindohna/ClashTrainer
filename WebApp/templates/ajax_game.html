@@ -4,16 +4,18 @@
     <title>Clash Trainer</title>
 </head>
 <body>
-
-    <h1>Clash Trainer – AJAX Edition</h1>
-
-    <div id="game-box">
-        <p id="card-name">Loading...</p>
-
-        <input type="number" id="guess" min="1" max="9">
-        <button id="submit-btn">Submit Guess</button>
-
-        <p id="message"></p>
+    <div style="width: 100vw; display: flex; flex-direction: column; align-items: center; margin-top: 130px;">
+        <div >
+            <div id="game-box" style="display: flex; flex-direction: column; align-items: center; border: 1px solid black; padding: 20px; padding-bottom: 46px; margin-top: 50px; width: 300px;">
+                <h1>Clash Trainer</h1>
+                <p id="card-name" style="font-size: 20px;">Loading...</p>
+        
+                <input type="number" id="guess" min="1" max="9" style="margin-bottom: 18px;">
+                <button id="submit-btn">Submit Guess</button>
+        
+            </div>
+            <p id="message" style="text-align: center; margin-top: 40px; font-size: 18px; font-weight: 500 ;"></p>
+        </div>
     </div>
 
     <script>
