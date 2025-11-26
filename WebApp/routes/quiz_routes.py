@@ -13,7 +13,7 @@ def init_game():
     session["current_card"] = None
 
 
-@card_bp.route("/ajax_game")
+@card_bp.route("/")
 def ajax_game_page():
     # Render HTML file only, JS will handle everything else
     from flask import render_template
