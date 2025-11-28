@@ -7,7 +7,8 @@ A simple training tool designed to help players of **Clash Royale** to improve i
 Most of the tools build for Clash Royale players so far mainly revolve around deck building and superficial matchup analysis. I believe far more sophisticated and useful tools can be built to help players improve their skills. 
 The dream or end goal of this project is to sucessfully incorporate one or multiple models that can create common and relevant game situations, and subsequently not only find, but also explain the best move(s) for each of these situations. I believe this would build the foundation of the best way to improve: pattern recognition and awareness of best moves. 
 
----
+## Demo
+![Demo GIF](ClashTrainerDemo.gif)
 
 ## Project Outline & Features
 
