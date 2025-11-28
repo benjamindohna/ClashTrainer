@@ -387,7 +387,7 @@
         "elixir": 4,
         "meta_score": 0
     },
-    "Mirror": {
+    "_Mirror": {
         "comment": "think about this. needs special treatement in code",
         "elixir": 1,
         "meta_score": 0

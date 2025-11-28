@@ -3,25 +3,28 @@
     "_last_updated_meta_scores": "/",
     "_note": "event and temporary cards excluded",
 
-    "Knight": {
-        "elixir": 3
+    "Mini P.E.K.K.A": {
+        "elixir": 4, 
+        "image": "/static/card_images/Mini P.E.K.K.A.png"
     },
-    "Archers": {
-        "elixir": 3
+    "Berserker": {
+        "elixir": 2, 
+        "image": "/static/card_images/Berserker.png"
     },
-    "Goblins": {
-        "elixir": 2
+    "Little Prince": {
+        "elixir": 3, 
+        "image": "/static/card_images/Little Prince.png"
     },
-    "Giant": {
-        "elixir": 5
+    "Bowler": {
+        "elixir": 5, 
+        "image": "/static/card_images/Bowler.png"
     },
-    "P.E.K.K.A": {
-        "elixir": 7
+    "X-Bow": {
+        "elixir": 6, 
+        "image": "/static/card_images/X-Bow.png"
     },
-    "Minions": {
-        "elixir": 3
-    },
-    "Balloon": {
-        "elixir": 5
+    "Golem": {
+        "elixir": 8,
+        "image": "/static/card_images/Golem.png"
     }
 }
