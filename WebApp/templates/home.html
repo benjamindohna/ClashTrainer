@@ -48,10 +48,36 @@
     <a class="game-link" href="/trade_quiz">Elixir Trade Trainer</a>
 </div>
 
+<button id="fart-btn" style="margin-top: 20px;">Touch me 🙂</button>
+<p style="text-align: center; margin-top: 34px;" id="fart-output"></p>
+
 <footer>
     <a href="https://github.com/benjamindohna/" target="_blank">GitHub</a> |
     <a href="https://www.linkedin.com/in/benjamindohna/" target="_blank">LinkedIn</a>
 </footer>
 
+<script>
+document.getElementById("fart-btn").onclick = async function() {
+    const outputElement = document.getElementById("fart-output");
+    
+    outputElement.innerText = "Wait..."; 
+    
+    try {
+        const res = await fetch("/api/fart_ai");
+        
+        if (!res.ok) {
+            throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        
+        const data = await res.json();
+        
+        outputElement.innerText = data.fart_text;
+        
+    } catch (error) {
+        console.error("Error fetching AI sound:", error);
+        outputElement.innerText = "Error: Could not fetch sound.";
+    }
+}
+</script>
 </body>
 </html>

@@ -1,18 +1,22 @@
 from flask import Blueprint, session, jsonify, request, render_template
-import random
+import random, requests, os
+from dotenv import load_dotenv
 from Data.data_utils import load_card_data, load_card_data_sample
+from pathlib import Path
+from google import genai
 
 # -----------------------
 # Blueprints
 # -----------------------
 card_bp = Blueprint("card_bp", __name__)
 trade_bp = Blueprint("trade_bp", __name__)
+ai_bp = Blueprint("ai_bp", __name__)
 
 # -----------------------
 # Card Data
 # -----------------------
 CARDS_ELIXIR_QUIZ = load_card_data_sample()  # sample
-CARDS_TRADE_QUIZ = load_card_data_sample()         # full
+CARDS_TRADE_QUIZ = load_card_data()         # full
 
 # -----------------------
 # Home Route
@@ -157,3 +161,11 @@ def trade_submit():
     })
 
 
+client = genai.Client()
+
+@ai_bp.route("/api/fart_ai")
+def fart_ai():
+    response = client.models.generate_content(
+        model="gemini-2.5-flash", contents="Tell me a fact that I GENUINELY would not want to know or be remined of. Like a fact that will ruin my day if I hear it. GENUINELY, not joking. Dont include any explanations or addresse to me, just the fact itself."
+    )
+    return jsonify({"fart_text": response.text})
