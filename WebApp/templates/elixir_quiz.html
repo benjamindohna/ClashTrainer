@@ -5,7 +5,7 @@
 </head>
 <body>
     <div style="width: 100vw; display: flex; flex-direction: column; align-items: center; margin-top: 130px;">
-        <div >
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div id="game-box" style="display: flex; flex-direction: column; align-items: center; border: 1px solid black; padding: 20px; padding-bottom: 46px; margin-top: 50px; width: 300px;">
                 <h1>Clash Trainer</h1>
                 <p id="card-name" style="font-size: 20px;">Loading...</p>
@@ -15,6 +15,9 @@
         
             </div>
             <p id="message" style="text-align: center; margin-top: 40px; font-size: 18px; font-weight: 500 ;"></p>
+            <button id="new-game-btn" style="display: none">
+                New Game
+            </button>
         </div>
     </div>
 
@@ -26,6 +29,8 @@
             if (data.finished) {
                 document.getElementById("card-name").innerText = "All cards completed!";
                 document.getElementById("submit-btn").disabled = true;
+                document.getElementById("new-game-btn").style = "display: flex;";
+                // add the line that makes the new game button appear
                 return;
             }
 
@@ -58,8 +63,15 @@
                 fetchNextCard();
             }
         }
+        
+        async function newGame() {
+            // just reoload the page...
+            // Also. new game button should only appear when card pool becomes empty
+        }
 
         document.getElementById("submit-btn").onclick = submitGuess;
+
+        document.getElementById("new-game-btn").onclick = newGame;
 
         // Load first card:
         fetchNextCard();

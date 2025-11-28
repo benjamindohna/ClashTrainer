@@ -17,7 +17,7 @@ def init_game():
 def ajax_game_page():
     # Render HTML file only, JS will handle everything else
     from flask import render_template
-    return render_template("ajax_game.html")
+    return render_template("elixir_quiz.html")
 
 
 @card_bp.route("/api/next_card")
