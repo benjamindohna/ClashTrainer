@@ -1,5 +1,6 @@
 import pytest
 from WebApp import create_app
+from Data.data_utils import load_card_data_sample
 
 @pytest.fixture
 def client():

@@ -6,5 +6,6 @@ def create_app():
 
     from .routes.quiz_routes import card_bp
     app.register_blueprint(card_bp)
+    app.config["TESTING"] = False 
 
     return app
