@@ -40,9 +40,10 @@ Currently, the project is planned across these developmental phases:
 
 ## To-Do List
 
-### Game Mechanics
+### Currently Hosted Features
 * [ ] Implement a score tracking system.
-* [ ] Introduce mixed difficulty modes.
+* [ ] Make trade questions more relevant using database refinement (cards have type: defensive | Offensive | Support | etc. - trade it built depending on this).
+* [ ] Offer a ticker "Use absolute trade value" which allows people to submit positive values also for negative trades. 
 
 ### Future Scope
-* [ ] Find new ideas how to provide value to players.
+* [ ] Find new ideas how to provide value to players and expand the project.
