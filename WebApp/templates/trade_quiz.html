@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elixir Trade Trainer</title>
+</head>
+<body>
+
+<div style="width: 100vw; display: flex; flex-direction: column; 
+align-items: center; margin-top: 130px;">
+
+    <h1>Elixir Trade Trainer</h1>
+
+    <div id="game-box" style="border: 1px solid black; padding: 40px 20px 40px 20px; 
+    width: 300px; display: flex; flex-direction: column; align-items: center;">
+
+        <p style="font-size: 14px; margin: 0px;">Your opponent attacked with:</p>
+        <p id="opponent-card" style="font-size: 40px; margin: 6px 0px 20px 0px; text-align: center;">Loading...</p>
+
+        <br>
+
+        <p style="font-size: 14px; margin: 0px;">You defended with:</p>
+        <p id="player-card" style="font-size: 40px; margin: 6px 0px 20px 0px; text-align: center;">Loading...</p>
+
+        <br>
+
+        <div style="display: flex; justify-content: center; width: 400px";>
+            <input id="guess" type="number" step="1" style="width: 60px;">
+            <button id="submit-btn">Submit</button>
+        </div>
+
+    </div>
+
+    <p id="message" style="margin-top: 30px; font-size: 18px;"></p>
+
+    <a href="/" style="text-decoration: none; color: black;">
+        <button>Home</a>
+    </a>
+</div>
+
+
+<script>
+async function loadTrade() {
+    const res = await fetch("/api/trade/next");
+    const data = await res.json();
+
+    document.getElementById("opponent-card").innerText = data.opponent;
+    document.getElementById("player-card").innerText = data.player;
+}
+
+async function submitTrade() {
+    const guess = document.getElementById("guess").value;
+
+    const res = await fetch("/api/trade/submit", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ guess: guess })
+    });
+
+    const data = await res.json();
+
+    if (data.correct) {
+        document.getElementById("message").innerText = `${data.correct_value} is correct!`;
+    } else {
+        document.getElementById("message").innerHTML =
+            `${data.response_if_wrong}`;
+    }
+
+    loadTrade(); // load next cards automatically
+}
+
+document.getElementById("submit-btn").onclick = submitTrade;
+
+document.getElementById("guess").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        submitTrade();         
+    }
+});
+
+loadTrade();
+</script>
+
+</body>
+</html>

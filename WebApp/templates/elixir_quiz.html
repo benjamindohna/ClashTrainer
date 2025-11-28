@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Clash Trainer</title>
+    <title>Elixir Values Trainer</title>
 </head>
 <body>
-    <div style="width: 100vw; display: flex; flex-direction: column; align-items: center; margin-top: 130px;">
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div id="game-box" style="display: flex; flex-direction: column; align-items: center; border: 1px solid black; padding: 20px; padding-bottom: 46px; margin-top: 50px; width: 300px;">
-                <h1>Clash Trainer</h1>
-                <p id="card-name" style="font-size: 20px;">Loading...</p>
-        
-                <input type="number" id="guess" min="1" max="9" style="margin-bottom: 18px;">
-                <button id="submit-btn">Submit Guess</button>
-        
-            </div>
-            <p id="message" style="text-align: center; margin-top: 40px; font-size: 18px; font-weight: 500 ;"></p>
-            <button id="new-game-btn" style="display: none">
-                New Game
-            </button>
+
+<div style="width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+    <h1>Elixir Values Trainer</h1>
+
+    <div id="game-box" style="border: 1px solid black; padding: 40px 20px 40px 20px; width: 300px; display: flex; flex-direction: column; align-items: center;">
+
+        <p style="font-size: 14px; margin: 0px;">How much elixir does this card cost:</p>
+        <p id="card-name" style="font-size: 40px; margin: 6px 0px 20px 0px; text-align: center;">Loading...</p>
+        <img id="card-image" style="width: 120px; height: auto; margin-bottom: 26px; margin-top: -18px;" />
+        <div id="input" style="display: flex; justify-content: center; width: 400px;">
+            <input type="number" id="guess" min="1" max="9" style="width: 60px;">
+            <button id="submit-btn" style="margin-left: 10px;">Submit Guess</button>
         </div>
+        <button id="new-game-btn" style="margin-top: 0; display: none">New Round</button>
+
     </div>
 
-    <script>
-        async function fetchNextCard() {
-            const res = await fetch("/api/next_card");
-            const data = await res.json();
+    <p id="message" style="margin-top: 30px; font-size: 18px;"></p>
 
-            if (data.finished) {
-                document.getElementById("card-name").innerText = "All cards completed!";
-                document.getElementById("submit-btn").disabled = true;
-                document.getElementById("new-game-btn").style = "display: flex;";
-                // add the line that makes the new game button appear
-                return;
-            }
+    <a href="/" style="text-decoration: none; color: black;">
+        <button>Home</a>
+    </a>
+</div>
 
-            document.getElementById("card-name").innerText = data.card;
-        }
+<script>
+console.log("Elixir Quiz Loaded");
+async function fetchNextCard() {
+    const res = await fetch("/api/next_card");
+    const data = await res.json();
 
-        async function submitGuess() {
-            const guess = document.getElementById("guess").value;
+    document.getElementById("card-name").innerText = data.card;
 
-            const res = await fetch("/api/submit_guess", {
-                method: "POST",
-                headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({ guess: guess })
-            });
+    const img = document.getElementById("card-image");
+    if (data.image) {
+        img.src = data.image;
+        img.style.display = "block";
+    } else {
+        img.style.display = "none";  // hide if no image
+    }
+}
 
-            const data = await res.json();
+async function submitGuess() {
+    const guess = document.getElementById("guess").value;
 
-            if (data.correct) {
-                document.getElementById("message").innerText = "Correct!";
-            } else {
-                document.getElementById("message").innerText =
-                    "Wrong! Correct was " + data.correct_elixir;
-            }
+    const res = await fetch("/api/submit_guess", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ guess: guess })
+    });
 
-            if (data.finished) {
-                document.getElementById("card-name").innerText =
-                    "All cards completed!";
-                document.getElementById("submit-btn").disabled = true;
-            } else {
-                fetchNextCard();
-            }
-        }
-        
-        async function newGame() {
-            // just reoload the page...
-            // Also. new game button should only appear when card pool becomes empty
-        }
+    const data = await res.json();
 
-        document.getElementById("submit-btn").onclick = submitGuess;
+    if (data.correct) {
+        document.getElementById("message").innerText = `${data.correct_elixir} is correct!`;
+    } else {
+        document.getElementById("message").innerHTML =
+            `${data.user_guess} elixir is wrong! ${data.card} costs ${data.correct_elixir} elixir.`;
+    }
 
-        document.getElementById("new-game-btn").onclick = newGame;
-
-        // Load first card:
+    if (data.finished) {
+        const plural = data.incorrect_guesses === 1 ? "" : "es";
+        document.getElementById("card-name").innerText = `All cards completed! You had ${data.incorrect_guesses} wrong guess${plural}.`;
+        document.getElementById("submit-btn").disabled = true;
+        document.getElementById("input").style.display = "none";
+        document.getElementById("new-game-btn").style.display = "block";
+        document.getElementById("card-image").style.display = "none";
+    } else {
         fetchNextCard();
-    </script>
+    }
+}
+
+async function newGame() {
+    location.reload();  // reload the page to start new game
+}
+
+document.getElementById("submit-btn").onclick = submitGuess;
+document.getElementById("new-game-btn").onclick = newGame;
+
+// Enable Enter key to submit guess
+document.getElementById("guess").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        submitGuess();
+    }
+});
+
+// Load first card
+fetchNextCard();
+</script>
 
 </body>
 </html>
