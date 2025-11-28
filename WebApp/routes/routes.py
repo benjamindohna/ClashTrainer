@@ -15,7 +15,7 @@ ai_bp = Blueprint("ai_bp", __name__)
 # -----------------------
 # Card Data
 # -----------------------
-CARDS_ELIXIR_QUIZ = load_card_data_sample()  # sample
+CARDS_ELIXIR_QUIZ = load_card_data()  # sample
 CARDS_TRADE_QUIZ = load_card_data()         # full
 
 # -----------------------
