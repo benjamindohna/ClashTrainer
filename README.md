@@ -44,21 +44,6 @@ ClashTrainer/
 ├── myproject_env/        # Virtual Environment (must be in .gitignore)
 └── __pycache__/          # Bytecode/Cache (must be in .gitignore)
 
-## Project Structure
-my_project/
-├── .git/                 # Git repository (created automatically)
-├── .gitignore            # Files to ignore in Git
-├── README.md             # Project description
-├── requirements.txt      # Python dependencies
-├── main.py               # Main entry point
-├── src/                  # Source code folder
-│   ├── utils.py
-│   └── config.py
-├── tests/                # Test files
-│   └── test_utils.py
-└── data/                 # Data files (often in .gitignore)
-    └── .gitkeep          # Empty file to track empty folder
-
 ## Project Outline & Features
 
 Currently, the project is planned across these developmental phases:
