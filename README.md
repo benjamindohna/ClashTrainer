@@ -13,6 +13,7 @@ The dream or end goal of this project is to sucessfully incorporate one or multi
 ## For Ogabek🤓
 * Check out the amazing RegEX in the Terminal Fronted files. Thank God I implemented them!
 * In get_key() function (of same files) there is try and finally. WOOOOOOW🙀
+* Check out gemini API at the bottom of routes.py
 
 ## Project Outline & Features
 
