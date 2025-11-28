@@ -10,6 +10,40 @@ The dream or end goal of this project is to sucessfully incorporate one or multi
 ## Demo
 ![Demo GIF](ClashTrainerDemo.gif)
 
+## For Ogabek🤓
+* Check out the amazing RegEX in the Terminal Fronted files. Thank God I implemented them!
+* In get_key() function (of same files) there is try and finally. WOOOOOOW🙀
+
+## Project Structure
+ClashTrainer/
+├── .gitignore            # Files to ignore in Git (must be kept!)
+├── README.md             # Project description (must be kept!)
+├── requirements.txt      # Python dependencies (must be kept!)
+├── global_packages.txt   # Deprecated list of packages (recommend removing)
+├── pytest.ini            # Pytest configuration
+├── ClashTrainerDemo.gif  # GIF/Video for project functionality
+├── run.py                # Main entry point (instead of main.py)
+├── WebApp/               # Source code folder for web components
+│   ├── routes/
+│   ├── static/
+│   ├── templates/
+│   ├── __init__.py
+│   └── api.py
+├── TerminalFrontend/     # Source code folder for terminal components
+│   ├── multiple_cards_elixir_quiz.py
+│   └── single_card_elixir_quiz.py
+├── Backend/              # Source code folder for core logic
+│   └── trade_calculations.py
+├── Data/                 # Data and utility files
+│   ├── cards.json        # External data file (must be kept!)
+│   ├── cards_sample.json # Sample data file
+│   ├── data_utils.py     # Functions for data manipulation
+│   └── meta_score_scraping.py
+├── tests/                # Test files
+│   └── test_quiz_routes.py
+├── myproject_env/        # Virtual Environment (must be in .gitignore)
+└── __pycache__/          # Bytecode/Cache (must be in .gitignore)
+
 ## Project Outline & Features
 
 Currently, the project is planned across these developmental phases:
