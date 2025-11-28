@@ -35,12 +35,9 @@ Currently, the project is planned across these developmental phases:
 
 ## To-Do List
 
-### Phase 1 — Terminal
+### Game Mechanics
 * [ ] Implement a score tracking system.
 * [ ] Introduce mixed difficulty modes.
-* [ ] Complete the multi-card elixir trade exercises.
 
-### Phase 2 — Web
-* [ ] Develop a simple web UI with integrated card images.
-* [ ] Implement the placement challenges.
-* [ ] Add user progress tracking and saving (optional).
+### Future Scope
+* [ ] Find new ideas how to provide value to players.
