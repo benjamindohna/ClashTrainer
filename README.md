@@ -9,6 +9,7 @@ The dream or end goal of this project is to sucessfully incorporate one or multi
 
 ## Demo
 ![Demo GIF](ClashTrainerDemo.gif)
+(You have to click on the GIF to see all of it)
 
 ## For Ogabek🤓
 * Check out the amazing RegEX in the Terminal Fronted files. Thank God I implemented them!
