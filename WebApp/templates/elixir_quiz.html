@@ -64,6 +64,8 @@ async function submitGuess() {
             `${data.user_guess} elixir is wrong! ${data.card} costs ${data.correct_elixir} elixir.`;
     }
 
+    document.getElementById("guess").value = "";
+
     if (data.finished) {
         const plural = data.incorrect_guesses === 1 ? "" : "es";
         document.getElementById("card-name").innerText = `All cards completed! You had ${data.incorrect_guesses} wrong guess${plural}.`;

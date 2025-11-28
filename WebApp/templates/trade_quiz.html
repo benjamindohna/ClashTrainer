@@ -65,7 +65,9 @@ async function submitTrade() {
             `${data.response_if_wrong}`;
     }
 
-    loadTrade(); // load next cards automatically
+    document.getElementById("guess").value = "";
+
+    loadTrade();
 }
 
 document.getElementById("submit-btn").onclick = submitTrade;
